@@ -5,12 +5,19 @@ object test extends App{
         case x if x<0   => "Negative"
     }
 
-    def checkvalue(x:Int):String=x match{
+    // def checkvalue(x:Int):String=x match{
+    //     case x if x%2==0 => "Even"
+    //     case x if x%2!=0 => "Odd"
+    // }
+
+    var f1=(x:Int)=> x match{
         case x if x%2==0 => "Even"
-        case x if x%2!=0 => "Odd"
+         case x if x%2!=0 => "Odd"
     }
+
     println("Enter number")
     var x:Int = StdIn.readInt()
     println(s"${x} is ${checkpositive(x)}" )
-    println(s"${x} is ${checkvalue(x)}")
+    //println(s"${x} is ${checkvalue(x)}")
+    println(s"${x} is ${f1(x)}")
 }
