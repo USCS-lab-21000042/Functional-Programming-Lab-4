@@ -10,7 +10,6 @@ object test extends App{
     val toUpper=(x:String)=>x.toUpperCase()
 
     var list=List("kamaL","Asiri","jayantha")
-    //println(toLower("TREDSDSD"))
     var out=list.map(list=>toLower(list))
     println(out)
     out=list.map(list=>toUpper(list))
