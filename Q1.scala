@@ -13,8 +13,6 @@ object test extends App{
         case x if x>2000000 => x*6.5/100.0
     }
 
-     
-
     //println("Interest :"+interst(252))
     println("Interest :"+ interst(252))
     
